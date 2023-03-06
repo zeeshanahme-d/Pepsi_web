@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Philosopher';
+}
+
+.section-1 {
+    width: 100%;
+    background-color: #0065c3;
+}
+
+.my_nav {
+    background-color: #0065c3;
+    width: 100%;
+
+}
+
+.nav-link {
+    color: whitesmoke !important;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.my-icon {
+    background-color: #fff !important;
+
+}
+
+.button {
+    min-width: 230px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: #fff;
+    background: #0065c3;
+    background: linear-gradient(90deg, #0065c3 0%, rgba(79, 209, 197, 1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 0px 5px 24px 10px rgba(79, 209, 197, .64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+.button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(230px + 10px);
+    min-height: calc(40px + 12px);
+    border: 4px solid #00FFCB;
+    box-shadow: 0px 5px 10px 0px rgba(0, 255, 203, .64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button:hover {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.button:hover::before {
+    opacity: 1;
+}
+
+.button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 4px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.button:hover::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+
+.section-2 {
+    background-color: #000;
+    height: 100vh;
+    background-image: url(/imge/pzs-can-nobug-tablet@2x.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+}
+.section-2-img1{
+    position: relative;
+    top: 50px;
+    width: 200px;
+   
+}
+
+
+
+.section-3 {
+    background: #04256a;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-3-img1 {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.section-3-img2 {
+    width: 90%;
+    margin-top: 100px;
+    /* margin-left: 30px; */
+}
+
+.section-3-text-1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.section-3-button {
+    min-width: 230px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: #fff;
+    background: #0065c3;
+    background: linear-gradient(90deg, #0065c3 0%, rgba(79, 209, 197, 1) 100%);
+    border: none;
+    /* margin-left: 10vw; */
+    border-radius: 1000px;
+    box-shadow: 0px 5px 24px 10px rgba(79, 209, 197, .64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+.section-3-button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(230px + 10px);
+    min-height: calc(40px + 12px);
+    border: 4px solid #00FFCB;
+    box-shadow: 0px 5px 10px 0px rgba(0, 255, 203, .64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.section-3-button:hover {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.section-3-button:hover::before {
+    opacity: 1;
+}
+
+.section-3-button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 4px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.section-3-button:hover::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+.section-4 {
+    background: #265cc5;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-4-img1 {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.section-4-img2 {
+    width: 80%;
+}
+
+.section-4-text-1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.section-4-img3 {
+    position: relative;
+    width: 140%;
+    height: 80vh;
+    right: 100px;
+    top: 20px;
+}
+.section-5{
+    background-color: #004795;
+    background-image: url(/imge/bg-1-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.section-footer{
+    background-color: #063e72 ;
+    margin-top: -50px;
+}
+.right-side-link {
+    margin-top: 50px !important;
+}
+.right-side-link p{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+    .section-2-div-2 {
+        margin-left: 10px;
+        margin-top: 140px;
+    }
+}
+
+@media only screen and (max-width: 988px) {
+    .section-2-div-2 {
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+    .section-2-img2 {
+        width: 10%;
+    }
+    .section-2{
+        height: 70vh;
+    }
+ 
+}
+
+@media only screen and (max-width: 396px) {
+.section-2-img1{
+    width: 50% !important;
+}
+}
+@media only screen and (max-width: 320px) {
+    .button {
+        margin-top: 30px;
+        margin-left: 8px;
+    }
+    .section-2{
+        /* height: 70vh; */
+        background-position: center ;
+    }
+
+    .section-2-img1 {
+        width: 100%;
+    }
+
+    .section-2-img2 {
+        width: 20%;
+        margin-left: 200px;
+        margin-top: 50px;
+    }
+
+    .section-2-div-2 {
+        width: 70%;
+        margin-top: 200px;
+        margin-left: 100px;
+
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .button {
+        margin-top: 30px;
+        margin-left: 8px;
+    }
+
+    .section-2-img1 {
+        width: 100%;
+    }
+
+    .section-2-img2 {
+        width: 20%;
+        margin-left: 200px;
+        margin-top: 50px;
+    }
+
+    .section-2-div-2 {
+        width: 70%;
+        margin-top: 200px;
+        margin-left: 100px;
+
+    }
+}
